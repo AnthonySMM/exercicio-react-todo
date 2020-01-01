@@ -1,9 +1,9 @@
 import React from 'react'
-//copiar s funçoes do bootstrap
-//podia quebrar cada item do menu separado se quiser
-//podia criar um component navbar, menu ...
 
-export default props=>(
+export default props => (
+    //aqui pode carregar os menus do bootstrap
+    //se tiver mais de um menu pode quebrar em multiplos menus
+    
     <nav className='navbar navbar-inverse bg-inverse'>
         <div className='container'>
             <div className='navbar-header'>
@@ -11,7 +11,7 @@ export default props=>(
                     <i className='fa fa-calendar-check-o'></i> TodoApp
                 </a>
             </div>
-            
+
             <div id='navbar' className='navbar-collapse collapse'>
                 <ul className="nav navbar-nav">
                     <li><a href='#/todos'>Tarefas</a></li>
@@ -20,5 +20,4 @@ export default props=>(
             </div>
         </div>
     </nav>
-
 )
